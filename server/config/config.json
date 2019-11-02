@@ -1,0 +1,14 @@
+{
+    "development": {
+        "PORT": "9090",
+        "MONGOURI": "mongodb://localhost:27017/selfculator"
+    },
+    "test": {
+        "PORT": "9090",
+        "MONGOURI": "mongodb://localhost:27017/selfculator_test"
+    },
+    "production": {
+        "PORT": "9090",
+        "MONGOURI": "mongodb://195.248.243.229:27017/selfculator"
+    }
+}
