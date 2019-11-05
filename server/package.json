@@ -1,17 +1,23 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "mongodb": "^3.3.3",
-    "mongoose": "^5.7.7"
-  }
+    "name": "selfculator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "export NODE_ENV=test || SET NODE_ENV=test && nodemon --exec 'npm start'",
+        "build": "export NODE_ENV=production || SET NODE_ENV=production && node server.js",
+        "start": "nodemon server.js"
+    },
+    "engines": {
+        "node": "8.11.3"
+    },
+    "keywords": [],
+    "author": "Siavash Ghanbari",
+    "license": "ISC",
+    "dependencies": {
+        "config": "^3.2.4",
+        "express": "^4.17.1",
+        "mongodb": "^3.3.3",
+        "mongoose": "^5.7.7"
+    }
 }

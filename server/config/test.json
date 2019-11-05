@@ -1,0 +1,5 @@
+{
+    "Level": "test",
+    "PORT": "9090",
+    "MONGOURI": "mongodb://localhost:27017/selfculator_test"
+}

@@ -1,8 +1,12 @@
 const mongoose = require('mongoose');
+const config = require('config');
 
 mongoose.Promise = global.Promise;
-
-mongoose.connect(process.env.SELFCULATOR_CONNECTION, { useNewUrlParser: true });
+console.log(`[${config.get('MONGOURI')}`);
+mongoose.connect(process.env.MONGOURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 
 module.exports = {
     mongoose
