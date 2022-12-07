@@ -16,7 +16,7 @@
     "license": "ISC",
     "dependencies": {
         "config": "^3.2.4",
-        "express": "^4.17.1",
+        "express": "^4.18.2",
         "logmog": "^1.1.4",
         "mongodb": "^3.3.3",
         "mongoose": "^5.7.7",
